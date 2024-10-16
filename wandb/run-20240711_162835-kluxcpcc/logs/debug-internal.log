@@ -1,0 +1,798 @@
+2024-07-11 16:28:36,002 INFO    StreamThr :106396 [internal.py:wandb_internal():88] W&B internal server running at pid: 106396, started at: 2024-07-11 16:28:36.002771
+2024-07-11 16:28:36,004 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status
+2024-07-11 16:28:36,006 INFO    WriterThread:106396 [datastore.py:open_for_write():87] open: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\run-kluxcpcc.wandb
+2024-07-11 16:28:36,007 DEBUG   SenderThread:106396 [sender.py:send():379] send: header
+2024-07-11 16:28:36,007 DEBUG   SenderThread:106396 [sender.py:send():379] send: run
+2024-07-11 16:28:36,439 INFO    SenderThread:106396 [dir_watcher.py:__init__():211] watching files in: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files
+2024-07-11 16:28:36,439 INFO    SenderThread:106396 [sender.py:_start_run_threads():1191] run started: kluxcpcc with start time 1720686516.00277
+2024-07-11 16:28:36,444 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: check_version
+2024-07-11 16:28:36,444 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: check_version
+2024-07-11 16:28:36,662 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: run_start
+2024-07-11 16:28:36,686 DEBUG   HandlerThread:106396 [system_info.py:__init__():26] System info init
+2024-07-11 16:28:36,686 DEBUG   HandlerThread:106396 [system_info.py:__init__():41] System info init done
+2024-07-11 16:28:36,686 INFO    HandlerThread:106396 [system_monitor.py:start():194] Starting system monitor
+2024-07-11 16:28:36,686 INFO    SystemMonitor:106396 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-11 16:28:36,686 INFO    HandlerThread:106396 [system_monitor.py:probe():214] Collecting system info
+2024-07-11 16:28:36,710 INFO    SystemMonitor:106396 [interfaces.py:start():188] Started cpu monitoring
+2024-07-11 16:28:36,710 INFO    SystemMonitor:106396 [interfaces.py:start():188] Started disk monitoring
+2024-07-11 16:28:36,711 INFO    SystemMonitor:106396 [interfaces.py:start():188] Started gpu monitoring
+2024-07-11 16:28:36,734 INFO    SystemMonitor:106396 [interfaces.py:start():188] Started memory monitoring
+2024-07-11 16:28:36,779 DEBUG   HandlerThread:106396 [system_info.py:probe():152] Probing system
+2024-07-11 16:28:36,785 INFO    SystemMonitor:106396 [interfaces.py:start():188] Started network monitoring
+2024-07-11 16:28:36,785 DEBUG   HandlerThread:106396 [system_info.py:probe():200] Probing system done
+2024-07-11 16:28:36,791 DEBUG   HandlerThread:106396 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.7.16', 'heartbeatAt': '2024-07-11T08:28:36.785532', 'startedAt': '2024-07-11T08:28:35.991156', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'serverwan.py', 'codePathLocal': 'serverwan.py', 'codePath': 'serverwan.py', 'host': 'owen', 'username': 'a0975', 'executable': 'C:\\Users\\a0975\\anaconda3\\envs\\fltest\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3201.0, 'min': 0.0, 'max': 3201.0}, 'cpu_freq_per_core': [{'current': 3201.0, 'min': 0.0, 'max': 3201.0}], 'disk': {'/': {'total': 474.71581649780273, 'used': 435.1325263977051}}, 'gpu': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'memory_total': 6442450944}], 'memory': {'total': 13.855525970458984}}
+2024-07-11 16:28:36,791 INFO    HandlerThread:106396 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-11 16:28:36,791 INFO    HandlerThread:106396 [system_monitor.py:probe():227] Publishing system info
+2024-07-11 16:28:36,791 DEBUG   HandlerThread:106396 [system_info.py:_save_conda():210] Saving list of conda packages installed into the current environment
+2024-07-11 16:28:37,452 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\conda-environment.yaml
+2024-07-11 16:28:39,632 DEBUG   HandlerThread:106396 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-11 16:28:39,633 INFO    HandlerThread:106396 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-11 16:28:39,641 DEBUG   SenderThread:106396 [sender.py:send():379] send: files
+2024-07-11 16:28:39,642 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-11 16:28:39,711 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-11 16:28:39,712 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: python_packages
+2024-07-11 16:28:39,712 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-11 16:28:39,712 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:39,712 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: stop_status
+2024-07-11 16:28:40,028 DEBUG   SenderThread:106396 [sender.py:send():379] send: telemetry
+2024-07-11 16:28:40,356 INFO    wandb-upload_0:106396 [upload_job.py:push():130] Uploaded file C:\Users\a0975\AppData\Local\Temp\tmp3m4zlkzbwandb\x59ftp1l-wandb-metadata.json
+2024-07-11 16:28:40,473 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\conda-environment.yaml
+2024-07-11 16:28:40,474 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:28:40,474 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-metadata.json
+2024-07-11 16:28:40,474 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\requirements.txt
+2024-07-11 16:28:40,707 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:28:40,708 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:28:40,708 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:28:40,709 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:28:40,721 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:41,480 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:28:41,725 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:28:41,725 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:42,488 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:28:42,736 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:43,747 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:44,760 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:45,763 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:46,739 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:28:46,771 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:47,776 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:48,788 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:49,800 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:50,807 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:51,788 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:28:51,814 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:51,939 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:28:51,940 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:28:51,941 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:28:51,943 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:28:52,571 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:28:52,571 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:28:52,606 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:28:52,607 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:28:52,607 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:28:52,609 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:28:52,818 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:53,274 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:28:53,276 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:28:53,276 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:28:53,277 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:28:53,580 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:28:53,826 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:54,037 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:28:54,038 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:28:54,039 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:28:54,041 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:28:54,583 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:28:54,584 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:28:54,704 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:28:54,705 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:28:54,705 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:28:54,706 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:28:54,740 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-11 16:28:54,740 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: stop_status
+2024-07-11 16:28:54,835 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:55,385 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:28:55,386 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:28:55,387 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:28:55,388 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:28:55,595 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:28:55,829 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:56,060 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:28:56,061 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:28:56,062 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:28:56,064 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:28:56,609 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:28:56,610 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:28:56,725 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:28:56,726 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:28:56,726 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:28:56,727 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:28:56,838 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:56,905 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:28:57,419 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:28:57,420 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:28:57,420 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:28:57,422 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:28:57,678 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:28:57,848 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:58,096 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:28:58,098 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:28:58,098 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:28:58,100 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:28:58,686 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:28:58,687 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:28:58,827 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:28:58,828 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:28:58,828 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:28:58,829 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:28:58,856 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:28:59,524 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:28:59,525 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:28:59,525 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:28:59,526 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:28:59,797 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:28:59,867 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:00,230 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:00,231 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:00,232 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:00,232 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:00,814 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:00,814 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:00,875 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:00,936 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:00,938 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:00,939 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:00,940 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:01,611 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:01,611 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:01,612 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:01,613 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:01,890 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:01,921 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:29:01,923 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:02,276 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:02,278 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:02,278 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:02,279 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:02,896 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:02,927 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:02,928 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:02,957 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:02,958 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:02,958 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:02,959 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:03,673 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:03,675 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:03,675 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:03,676 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:03,901 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:04,002 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:04,450 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:04,451 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:04,451 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:04,452 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:04,912 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:05,005 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:05,006 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:05,260 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:05,261 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:05,261 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:05,262 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:05,905 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:06,001 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:06,002 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:06,002 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:06,004 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:06,197 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:06,197 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:06,732 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:06,733 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:06,733 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:06,734 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:06,918 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:06,933 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:29:07,200 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:07,201 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:07,201 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\config.yaml
+2024-07-11 16:29:07,467 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:07,469 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:07,469 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:07,470 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:07,926 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:08,193 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:08,194 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:08,195 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:08,196 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:08,353 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:08,355 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:08,901 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:08,901 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:08,902 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:08,903 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:08,939 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:09,359 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:09,360 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:09,613 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:09,614 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:09,614 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:09,615 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:09,746 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-11 16:29:09,747 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: stop_status
+2024-07-11 16:29:09,948 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:10,300 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:10,301 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:10,301 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:10,302 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:10,483 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:10,483 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:10,961 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:10,991 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:10,992 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:10,992 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:10,993 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:11,489 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:11,673 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:11,675 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:11,675 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:11,676 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:11,969 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:12,159 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:29:12,349 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:12,350 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:12,351 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:12,352 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:12,565 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:12,565 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:12,977 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:13,010 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:13,010 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:13,011 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:13,012 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:13,568 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:13,689 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:13,690 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:13,690 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:13,691 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:13,989 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:14,357 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:14,358 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:14,360 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:14,361 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:14,674 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:14,675 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:14,999 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:15,033 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:15,034 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:15,035 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:15,036 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:15,699 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:15,716 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:15,716 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:15,717 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:15,718 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:16,010 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:16,376 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:16,377 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:16,377 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:16,378 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:16,742 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:16,743 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:17,019 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:17,048 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:17,048 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:17,049 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:17,054 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:17,234 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:29:17,848 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:17,849 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:17,849 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:17,849 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:17,850 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:18,030 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:18,379 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:18,380 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:18,380 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:18,382 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:18,856 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:18,858 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:19,042 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:19,055 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:19,056 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:19,057 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:19,060 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:19,727 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:19,728 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:19,728 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:19,729 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:19,909 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:20,055 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:20,450 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:20,451 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:20,451 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:20,452 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:20,910 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:20,911 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:21,063 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:21,202 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:21,203 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:21,203 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:21,207 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:21,906 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:21,906 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:21,907 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:21,908 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:22,042 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:22,071 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:22,251 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:29:22,598 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:22,599 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:22,600 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:22,601 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:23,045 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:23,045 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:23,077 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:23,261 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:23,262 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:23,263 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:23,265 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:23,929 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:23,930 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:23,931 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:23,932 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:24,107 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:24,108 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:24,598 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:24,600 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:24,602 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:24,603 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:24,769 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-11 16:29:24,769 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: stop_status
+2024-07-11 16:29:25,096 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:25,111 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:25,113 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:25,258 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:25,259 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:25,260 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:25,261 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:25,932 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:25,933 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:25,935 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:25,936 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:26,107 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:26,203 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:26,588 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:26,590 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:26,590 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:26,591 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:27,108 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:27,221 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:27,223 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:27,278 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:29:27,280 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:27,281 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:27,281 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:27,282 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:27,962 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:27,963 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:27,963 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:27,965 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:28,120 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:28,245 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:28,609 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:28,610 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:28,610 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:28,611 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:29,161 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:29,251 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:29,252 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:29,292 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:29,293 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:29,294 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:29,295 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:29,948 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:29,949 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:29,949 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:29,950 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:30,122 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:30,281 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:30,615 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:30,616 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:30,616 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:30,619 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:31,129 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:31,285 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:31,286 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:31,292 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:31,293 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:31,294 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:31,295 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:31,953 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:31,954 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:31,954 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:31,955 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:32,141 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:32,292 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:29:32,328 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:32,616 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:32,617 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:32,618 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:32,620 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:33,150 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:33,309 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:33,310 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:33,310 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:33,311 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:33,339 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:33,340 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:33,956 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:33,957 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:33,958 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:33,959 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:34,152 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:34,368 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:34,615 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:34,617 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:34,618 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:34,619 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:35,162 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:35,278 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:35,279 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:35,279 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:35,280 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:35,468 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:35,468 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:35,955 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:35,956 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:35,956 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:35,957 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:36,159 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:36,472 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:36,687 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:36,688 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:36,689 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:36,689 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:36,797 DEBUG   SystemMonitor:106396 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-11 16:29:36,799 DEBUG   SenderThread:106396 [sender.py:send():379] send: stats
+2024-07-11 16:29:37,168 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:37,337 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:29:37,439 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:37,440 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:37,440 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:37,441 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:37,648 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:37,649 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:38,115 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:38,116 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:38,117 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:38,118 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:38,168 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:38,648 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:38,768 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:38,769 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:38,769 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:38,771 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:39,183 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:39,485 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:39,486 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:39,487 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:39,489 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:39,763 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:39,763 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:39,799 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-11 16:29:39,799 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: stop_status
+2024-07-11 16:29:40,172 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:40,185 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:40,187 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:40,187 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:40,188 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:40,763 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:40,765 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:40,890 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:40,892 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:40,892 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:40,893 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:41,182 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:41,612 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:41,613 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:41,613 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:41,614 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:41,883 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:41,883 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:42,195 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:42,310 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:42,310 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:42,310 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:42,311 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:42,524 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:29:42,887 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:42,887 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:43,014 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:43,015 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:43,015 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:43,016 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:43,195 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:43,715 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:43,716 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:43,716 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:43,717 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:43,963 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:44,204 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:44,484 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:44,485 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:44,486 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:44,487 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:44,969 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:44,970 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:45,132 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:45,133 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:45,134 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:45,135 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:45,217 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:45,799 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:45,799 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:45,800 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:45,801 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:46,064 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:46,222 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:46,487 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:46,488 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:46,488 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:46,489 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:47,078 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:47,080 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:47,166 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:47,166 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:47,167 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:47,168 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:47,233 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:47,549 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:29:47,849 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:47,851 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:47,851 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:47,852 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:48,136 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:48,246 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:48,501 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:48,501 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:48,502 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:48,503 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:49,145 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:49,146 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:49,208 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:49,209 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:49,210 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:49,211 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:49,251 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:49,883 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:49,884 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:49,884 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:49,885 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:50,211 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:50,263 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:50,573 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:50,574 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:50,575 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:50,576 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:51,210 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:51,211 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:51,255 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:51,256 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:51,256 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:51,257 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:51,273 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:51,944 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:51,945 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:51,945 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:51,947 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:52,299 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:52,300 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:52,567 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:29:52,680 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:52,681 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:52,681 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:52,682 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:53,289 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:53,305 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:53,306 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:53,438 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:53,439 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:53,440 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:53,441 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:54,126 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:54,127 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:54,128 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:54,129 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:54,297 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:54,408 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:54,779 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-11 16:29:54,779 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: stop_status
+2024-07-11 16:29:54,819 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:54,972 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:54,973 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:54,973 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:55,301 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:55,410 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:55,410 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:55,497 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:55,498 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:55,499 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:55,500 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:56,179 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:56,180 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:56,181 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:56,182 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:56,309 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:56,481 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:56,871 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:56,872 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:56,872 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:56,873 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:57,320 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:57,491 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:57,492 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:57,546 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:57,547 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:57,547 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:57,548 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:57,725 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:29:58,225 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:58,227 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:58,227 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:58,228 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:58,336 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:58,550 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:58,903 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:58,905 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:58,905 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:58,906 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:29:59,327 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:29:59,561 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:29:59,562 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:29:59,589 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:29:59,590 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:29:59,590 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:29:59,591 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:30:00,306 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 16:30:00,307 DEBUG   SenderThread:106396 [sender.py:send():379] send: history
+2024-07-11 16:30:00,307 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 16:30:00,308 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:30:00,324 DEBUG   SenderThread:106396 [sender.py:send():379] send: exit
+2024-07-11 16:30:00,324 INFO    SenderThread:106396 [sender.py:send_exit():586] handling exit code: 0
+2024-07-11 16:30:00,324 INFO    SenderThread:106396 [sender.py:send_exit():588] handling runtime: 83
+2024-07-11 16:30:00,326 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:30:00,326 INFO    SenderThread:106396 [sender.py:send_exit():594] send defer
+2024-07-11 16:30:00,326 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:00,326 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-11 16:30:00,326 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:00,326 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-11 16:30:00,326 INFO    SenderThread:106396 [sender.py:transition_state():614] send defer: 1
+2024-07-11 16:30:00,327 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:00,327 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-11 16:30:00,327 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:00,327 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-11 16:30:00,327 INFO    SenderThread:106396 [sender.py:transition_state():614] send defer: 2
+2024-07-11 16:30:00,327 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:00,327 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-11 16:30:00,327 INFO    HandlerThread:106396 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-11 16:30:00,327 DEBUG   SystemMonitor:106396 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-11 16:30:00,368 INFO    HandlerThread:106396 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-11 16:30:00,368 DEBUG   SystemMonitor:106396 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-11 16:30:00,368 INFO    HandlerThread:106396 [interfaces.py:finish():200] Joined disk monitor
+2024-07-11 16:30:00,587 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:30:00,591 INFO    HandlerThread:106396 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-11 16:30:00,592 INFO    HandlerThread:106396 [interfaces.py:finish():200] Joined memory monitor
+2024-07-11 16:30:00,592 INFO    HandlerThread:106396 [interfaces.py:finish():200] Joined network monitor
+2024-07-11 16:30:00,592 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:00,592 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-11 16:30:00,592 INFO    SenderThread:106396 [sender.py:transition_state():614] send defer: 3
+2024-07-11 16:30:00,592 DEBUG   SenderThread:106396 [sender.py:send():379] send: stats
+2024-07-11 16:30:00,592 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:00,593 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-11 16:30:00,593 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:00,593 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-11 16:30:00,593 INFO    SenderThread:106396 [sender.py:transition_state():614] send defer: 4
+2024-07-11 16:30:00,593 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:00,593 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-11 16:30:00,594 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:00,594 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-11 16:30:00,594 INFO    SenderThread:106396 [sender.py:transition_state():614] send defer: 5
+2024-07-11 16:30:00,594 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:00,594 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-11 16:30:00,594 DEBUG   SenderThread:106396 [sender.py:send():379] send: summary
+2024-07-11 16:30:00,595 INFO    SenderThread:106396 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 16:30:00,595 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:00,595 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-11 16:30:00,595 INFO    SenderThread:106396 [sender.py:transition_state():614] send defer: 6
+2024-07-11 16:30:00,595 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:00,595 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-11 16:30:00,595 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:00,595 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-11 16:30:00,596 INFO    SenderThread:106396 [sender.py:transition_state():614] send defer: 7
+2024-07-11 16:30:00,596 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:30:00,596 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:00,596 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-11 16:30:00,596 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:00,596 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-11 16:30:01,336 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-11 16:30:01,601 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:30:01,602 INFO    Thread-12 :106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:30:03,123 INFO    SenderThread:106396 [sender.py:transition_state():614] send defer: 8
+2024-07-11 16:30:03,123 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: poll_exit
+2024-07-11 16:30:03,123 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:03,123 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-11 16:30:03,124 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:03,124 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-11 16:30:03,124 INFO    SenderThread:106396 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-11 16:30:03,124 INFO    SenderThread:106396 [job_builder.py:_get_source_type():580] no source found
+2024-07-11 16:30:03,124 INFO    SenderThread:106396 [sender.py:transition_state():614] send defer: 9
+2024-07-11 16:30:03,125 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:03,125 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-11 16:30:03,125 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:03,125 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-11 16:30:03,125 INFO    SenderThread:106396 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-11 16:30:03,353 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-11 16:30:03,620 INFO    SenderThread:106396 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:30:03,620 INFO    SenderThread:106396 [dir_watcher.py:finish():388] scan: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files
+2024-07-11 16:30:03,620 INFO    SenderThread:106396 [dir_watcher.py:finish():402] scan save: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\conda-environment.yaml conda-environment.yaml
+2024-07-11 16:30:03,621 INFO    SenderThread:106396 [dir_watcher.py:finish():402] scan save: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\config.yaml config.yaml
+2024-07-11 16:30:03,622 INFO    SenderThread:106396 [dir_watcher.py:finish():402] scan save: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log output.log
+2024-07-11 16:30:03,625 INFO    SenderThread:106396 [dir_watcher.py:finish():402] scan save: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\requirements.txt requirements.txt
+2024-07-11 16:30:03,626 INFO    SenderThread:106396 [dir_watcher.py:finish():402] scan save: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-metadata.json wandb-metadata.json
+2024-07-11 16:30:03,626 INFO    SenderThread:106396 [dir_watcher.py:finish():402] scan save: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json wandb-summary.json
+2024-07-11 16:30:03,628 INFO    SenderThread:106396 [sender.py:transition_state():614] send defer: 10
+2024-07-11 16:30:03,629 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: poll_exit
+2024-07-11 16:30:03,629 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:03,631 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-11 16:30:03,632 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:03,632 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-11 16:30:03,632 INFO    SenderThread:106396 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-11 16:30:04,059 INFO    wandb-upload_0:106396 [upload_job.py:push():130] Uploaded file C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\conda-environment.yaml
+2024-07-11 16:30:04,097 INFO    wandb-upload_1:106396 [upload_job.py:push():130] Uploaded file C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\config.yaml
+2024-07-11 16:30:04,118 INFO    wandb-upload_3:106396 [upload_job.py:push():130] Uploaded file C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\requirements.txt
+2024-07-11 16:30:04,128 INFO    wandb-upload_4:106396 [upload_job.py:push():130] Uploaded file C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\wandb-summary.json
+2024-07-11 16:30:04,363 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-11 16:30:04,363 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: poll_exit
+2024-07-11 16:30:04,377 INFO    wandb-upload_2:106396 [upload_job.py:push():130] Uploaded file C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\files\output.log
+2024-07-11 16:30:04,581 INFO    Thread-11 :106396 [sender.py:transition_state():614] send defer: 11
+2024-07-11 16:30:04,581 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:04,581 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-11 16:30:04,581 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:04,582 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-11 16:30:04,582 INFO    SenderThread:106396 [file_pusher.py:join():175] waiting for file pusher
+2024-07-11 16:30:04,582 INFO    SenderThread:106396 [sender.py:transition_state():614] send defer: 12
+2024-07-11 16:30:04,582 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:04,582 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-11 16:30:04,582 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:04,582 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-11 16:30:04,582 INFO    SenderThread:106396 [file_stream.py:finish():601] file stream finish called
+2024-07-11 16:30:05,217 INFO    SenderThread:106396 [file_stream.py:finish():605] file stream finish is done
+2024-07-11 16:30:05,217 INFO    SenderThread:106396 [sender.py:transition_state():614] send defer: 13
+2024-07-11 16:30:05,218 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:05,218 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-11 16:30:05,218 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:05,218 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-11 16:30:05,218 INFO    SenderThread:106396 [sender.py:transition_state():614] send defer: 14
+2024-07-11 16:30:05,218 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: defer
+2024-07-11 16:30:05,218 INFO    HandlerThread:106396 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-11 16:30:05,218 DEBUG   SenderThread:106396 [sender.py:send():379] send: final
+2024-07-11 16:30:05,219 DEBUG   SenderThread:106396 [sender.py:send():379] send: footer
+2024-07-11 16:30:05,219 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: defer
+2024-07-11 16:30:05,219 INFO    SenderThread:106396 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-11 16:30:05,219 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-11 16:30:05,219 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: server_info
+2024-07-11 16:30:05,220 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-11 16:30:05,220 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: poll_exit
+2024-07-11 16:30:05,220 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-11 16:30:05,220 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: server_info
+2024-07-11 16:30:05,220 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-11 16:30:05,223 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 16:30:05,396 DEBUG   SenderThread:106396 [sender.py:send_request():406] send_request: poll_exit
+2024-07-11 16:30:05,396 INFO    MainThread:106396 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-11 16:30:05,397 INFO    MainThread:106396 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-11 16:30:05,397 INFO    MainThread:106396 [wandb_run.py:_footer_sync_info():3950] logging synced files
+2024-07-11 16:30:05,397 DEBUG   HandlerThread:106396 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-11 16:30:05,397 INFO    HandlerThread:106396 [handler.py:finish():882] shutting down handler
+2024-07-11 16:30:06,222 INFO    WriterThread:106396 [datastore.py:close():296] close: C:\Users\a0975\fl\wandb\run-20240711_162835-kluxcpcc\run-kluxcpcc.wandb
+2024-07-11 16:30:06,409 INFO    SenderThread:106396 [sender.py:finish():1608] shutting down sender
+2024-07-11 16:30:06,409 INFO    SenderThread:106396 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-11 16:30:06,409 INFO    SenderThread:106396 [file_pusher.py:join():175] waiting for file pusher

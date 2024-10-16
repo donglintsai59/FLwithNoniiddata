@@ -1,0 +1,27 @@
+INFO flower 2024-07-11 01:55:22,447 | app.py:80 | Flower server running (insecure, 100 rounds)
+INFO flower 2024-07-11 01:55:22,447 | server.py:118 | Initializing global parameters
+INFO flower 2024-07-11 01:55:22,448 | server.py:300 | Using initial parameters provided by strategy
+INFO flower 2024-07-11 01:55:22,448 | server.py:120 | Evaluating initial parameters
+Traceback (most recent call last):
+  File "serverwan.py", line 157, in <module>
+    main()
+  File "serverwan.py", line 91, in main
+    fl.server.start_server("localhost:8080", config={"num_rounds": 100}, strategy=strategy) #windows
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\flwr\server\app.py", line 86, in start_server
+    force_final_distributed_eval=force_final_distributed_eval,
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\flwr\server\app.py", line 118, in _fl
+    hist = server.fit(num_rounds=config["num_rounds"])
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\flwr\server\server.py", line 121, in fit
+    res = self.strategy.evaluate(parameters=self.parameters)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\flwr\server\strategy\fedavg.py", line 178, in evaluate
+    eval_res = self.eval_fn(weights)
+  File "serverwan.py", line 146, in evaluate
+    loss, accuracy = model.evaluate(x_val, y_val)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\keras\engine\data_adapter.py", line 1848, in _check_data_cardinality
+    raise ValueError(msg)
+ValueError: Data cardinality is ambiguous:
+  x sizes: 10000
+  y sizes: 10
+Make sure all arrays contain the same number of samples.

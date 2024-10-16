@@ -1,0 +1,7 @@
+[34m[1mwandb[39m[22m: Network error resolved after 0:01:17.989592, resuming normal operation.
+INFO flower 2024-07-11 17:08:48,617 | app.py:80 | Flower server running (insecure, 100 rounds)
+INFO flower 2024-07-11 17:08:48,617 | server.py:118 | Initializing global parameters
+INFO flower 2024-07-11 17:08:48,617 | server.py:300 | Using initial parameters provided by strategy
+INFO flower 2024-07-11 17:08:48,617 | server.py:120 | Evaluating initial parameters
+INFO flower 2024-07-11 17:08:49,371 | server.py:127 | initial parameters (loss, other metrics): 2.295201539993286, {'accuracy': 0.11959999799728394}
+INFO flower 2024-07-11 17:08:49,372 | server.py:133 | FL starting

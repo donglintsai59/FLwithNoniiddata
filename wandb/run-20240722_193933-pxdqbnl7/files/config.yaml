@@ -1,0 +1,39 @@
+wandb_version: 1
+
+round:
+  desc: null
+  value: 100
+'sensing batch ':
+  desc: null
+  value: 300
+max_bi:
+  desc: null
+  value: 10
+_wandb:
+  desc: null
+  value:
+    python_version: 3.7.16
+    cli_version: 0.17.4
+    framework: keras
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1721648373
+    t:
+      1:
+      - 2
+      - 3
+      - 55
+      2:
+      - 2
+      - 3
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.7.16
+      5: 0.17.4
+      8:
+      - 3
+      - 5
+      13: windows-amd64

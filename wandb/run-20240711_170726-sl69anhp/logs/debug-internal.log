@@ -1,0 +1,159 @@
+2024-07-11 17:07:26,016 INFO    StreamThr :127308 [internal.py:wandb_internal():88] W&B internal server running at pid: 127308, started at: 2024-07-11 17:07:26.015622
+2024-07-11 17:07:26,017 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: status
+2024-07-11 17:07:26,021 INFO    WriterThread:127308 [datastore.py:open_for_write():87] open: C:\Users\a0975\fl\wandb\run-20240711_170726-sl69anhp\run-sl69anhp.wandb
+2024-07-11 17:07:26,022 DEBUG   SenderThread:127308 [sender.py:send():379] send: header
+2024-07-11 17:07:26,022 DEBUG   SenderThread:127308 [sender.py:send():379] send: run
+2024-07-11 17:07:31,050 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:07:32,543 INFO    SenderThread:127308 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connection.py", line 207, in _new_conn
+    socket_options=self.socket_options,
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\socket.py", line 752, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 803, in urlopen
+    **response_kw,
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 492, in _make_request
+    raise new_e
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 1097, in _validate_conn
+    conn.connect()
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001EB494CBD08>: Failed to resolve 'api.wandb.ai' ([Errno 11002] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\adapters.py", line 497, in send
+    chunked=chunked,
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 846, in urlopen
+    method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001EB494CBD08>: Failed to resolve 'api.wandb.ai' ([Errno 11002] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\sdk\internal\internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001EB494CBD08>: Failed to resolve 'api.wandb.ai' ([Errno 11002] getaddrinfo failed)"))
+2024-07-11 17:07:36,075 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:07:41,129 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:07:46,168 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:07:51,216 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:07:56,267 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:08:01,293 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:08:06,341 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:08:11,393 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:08:16,432 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:08:21,464 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:08:26,493 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:08:31,541 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:08:36,580 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:08:41,622 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 17:08:44,919 INFO    SenderThread:127308 [dir_watcher.py:__init__():211] watching files in: C:\Users\a0975\fl\wandb\run-20240711_170726-sl69anhp\files
+2024-07-11 17:08:44,920 INFO    SenderThread:127308 [sender.py:_start_run_threads():1191] run started: sl69anhp with start time 1720688846.016622
+2024-07-11 17:08:44,920 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 17:08:44,924 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: check_version
+2024-07-11 17:08:44,925 DEBUG   SenderThread:127308 [sender.py:send_request():406] send_request: check_version
+2024-07-11 17:08:45,259 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: run_start
+2024-07-11 17:08:45,280 DEBUG   HandlerThread:127308 [system_info.py:__init__():26] System info init
+2024-07-11 17:08:45,280 DEBUG   HandlerThread:127308 [system_info.py:__init__():41] System info init done
+2024-07-11 17:08:45,280 INFO    HandlerThread:127308 [system_monitor.py:start():194] Starting system monitor
+2024-07-11 17:08:45,281 INFO    SystemMonitor:127308 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-11 17:08:45,281 INFO    HandlerThread:127308 [system_monitor.py:probe():214] Collecting system info
+2024-07-11 17:08:45,304 INFO    SystemMonitor:127308 [interfaces.py:start():188] Started cpu monitoring
+2024-07-11 17:08:45,305 INFO    SystemMonitor:127308 [interfaces.py:start():188] Started disk monitoring
+2024-07-11 17:08:45,306 INFO    SystemMonitor:127308 [interfaces.py:start():188] Started gpu monitoring
+2024-07-11 17:08:45,328 INFO    SystemMonitor:127308 [interfaces.py:start():188] Started memory monitoring
+2024-07-11 17:08:45,384 DEBUG   HandlerThread:127308 [system_info.py:probe():152] Probing system
+2024-07-11 17:08:45,384 INFO    SystemMonitor:127308 [interfaces.py:start():188] Started network monitoring
+2024-07-11 17:08:45,384 DEBUG   HandlerThread:127308 [system_info.py:probe():200] Probing system done
+2024-07-11 17:08:45,384 DEBUG   HandlerThread:127308 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.7.16', 'heartbeatAt': '2024-07-11T09:08:45.384698', 'startedAt': '2024-07-11T09:07:26.009620', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'serverwan.py', 'codePathLocal': 'serverwan.py', 'codePath': 'serverwan.py', 'host': 'owen', 'username': 'a0975', 'executable': 'C:\\Users\\a0975\\anaconda3\\envs\\fltest\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3201.0, 'min': 0.0, 'max': 3201.0}, 'cpu_freq_per_core': [{'current': 3201.0, 'min': 0.0, 'max': 3201.0}], 'disk': {'/': {'total': 474.71581649780273, 'used': 435.1519088745117}}, 'gpu': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'memory_total': 6442450944}], 'memory': {'total': 13.855525970458984}}
+2024-07-11 17:08:45,385 INFO    HandlerThread:127308 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-11 17:08:45,385 INFO    HandlerThread:127308 [system_monitor.py:probe():227] Publishing system info
+2024-07-11 17:08:45,385 DEBUG   HandlerThread:127308 [system_info.py:_save_conda():210] Saving list of conda packages installed into the current environment
+2024-07-11 17:08:45,927 INFO    Thread-12 :127308 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\a0975\fl\wandb\run-20240711_170726-sl69anhp\files\conda-environment.yaml
+2024-07-11 17:08:48,225 DEBUG   HandlerThread:127308 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-11 17:08:48,226 INFO    HandlerThread:127308 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-11 17:08:48,235 DEBUG   SenderThread:127308 [sender.py:send():379] send: files
+2024-07-11 17:08:48,235 INFO    SenderThread:127308 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-11 17:08:48,310 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-11 17:08:48,310 DEBUG   SenderThread:127308 [sender.py:send_request():406] send_request: python_packages
+2024-07-11 17:08:48,310 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-11 17:08:48,311 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:08:48,311 DEBUG   SenderThread:127308 [sender.py:send_request():406] send_request: stop_status
+2024-07-11 17:08:48,609 DEBUG   SenderThread:127308 [sender.py:send():379] send: telemetry
+2024-07-11 17:08:48,902 INFO    wandb-upload_0:127308 [upload_job.py:push():130] Uploaded file C:\Users\a0975\AppData\Local\Temp\tmpyqh5_j4fwandb\64xmdtz1-wandb-metadata.json
+2024-07-11 17:08:48,939 INFO    Thread-12 :127308 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_170726-sl69anhp\files\conda-environment.yaml
+2024-07-11 17:08:48,939 INFO    Thread-12 :127308 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\a0975\fl\wandb\run-20240711_170726-sl69anhp\files\output.log
+2024-07-11 17:08:48,939 INFO    Thread-12 :127308 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\a0975\fl\wandb\run-20240711_170726-sl69anhp\files\requirements.txt
+2024-07-11 17:08:48,939 INFO    Thread-12 :127308 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\a0975\fl\wandb\run-20240711_170726-sl69anhp\files\wandb-metadata.json
+2024-07-11 17:08:49,324 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:08:49,371 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 17:08:49,372 DEBUG   SenderThread:127308 [sender.py:send():379] send: history
+2024-07-11 17:08:49,374 DEBUG   SenderThread:127308 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 17:08:49,374 INFO    SenderThread:127308 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 17:08:49,944 INFO    Thread-12 :127308 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\a0975\fl\wandb\run-20240711_170726-sl69anhp\files\wandb-summary.json
+2024-07-11 17:08:50,330 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:08:50,376 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 17:08:50,949 INFO    Thread-12 :127308 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\a0975\fl\wandb\run-20240711_170726-sl69anhp\files\output.log
+2024-07-11 17:08:51,335 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:08:52,346 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:08:53,351 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:08:54,361 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:08:55,366 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:08:56,344 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 17:08:56,374 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:08:57,382 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:08:58,390 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:08:59,398 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:00,406 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:01,353 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 17:09:01,415 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:02,422 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:03,332 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-11 17:09:03,333 DEBUG   SenderThread:127308 [sender.py:send_request():406] send_request: stop_status
+2024-07-11 17:09:03,425 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:04,434 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:05,446 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:06,459 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:06,583 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 17:09:07,465 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:08,475 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:09,480 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:10,491 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:11,494 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:12,359 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 17:09:12,496 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:13,502 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:14,516 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:15,521 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 17:09:16,529 DEBUG   HandlerThread:127308 [handler.py:handle_request():158] handle_request: internal_messages

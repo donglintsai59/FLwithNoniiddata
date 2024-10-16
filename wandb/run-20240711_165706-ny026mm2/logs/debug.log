@@ -1,0 +1,79 @@
+2024-07-11 16:57:06,082 INFO    MainThread:130648 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-11 16:57:06,082 INFO    MainThread:130648 [wandb_setup.py:_flush():76] Configure stats pid to 130648
+2024-07-11 16:57:06,082 INFO    MainThread:130648 [wandb_setup.py:_flush():76] Loading settings from C:\Users\a0975\.config\wandb\settings
+2024-07-11 16:57:06,082 INFO    MainThread:130648 [wandb_setup.py:_flush():76] Loading settings from C:\Users\a0975\fl\wandb\settings
+2024-07-11 16:57:06,082 INFO    MainThread:130648 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-11 16:57:06,083 INFO    MainThread:130648 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-11 16:57:06,088 INFO    MainThread:130648 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'serverwan.py', 'program_abspath': 'C:\\Users\\a0975\\fl\\serverwan.py', 'program': 'serverwan.py'}
+2024-07-11 16:57:06,088 INFO    MainThread:130648 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-11 16:57:06,088 INFO    MainThread:130648 [wandb_init.py:_log_setup():529] Logging user logs to C:\Users\a0975\fl\wandb\run-20240711_165706-ny026mm2\logs\debug.log
+2024-07-11 16:57:06,088 INFO    MainThread:130648 [wandb_init.py:_log_setup():530] Logging internal logs to C:\Users\a0975\fl\wandb\run-20240711_165706-ny026mm2\logs\debug-internal.log
+2024-07-11 16:57:06,088 INFO    MainThread:130648 [wandb_init.py:init():569] calling init triggers
+2024-07-11 16:57:06,088 INFO    MainThread:130648 [wandb_init.py:init():577] wandb.init called with sweep_config: {}
+config: {'round': 100, 'sensing batch ': 300, 'max_bi': 10}
+2024-07-11 16:57:06,088 INFO    MainThread:130648 [wandb_init.py:init():619] starting backend
+2024-07-11 16:57:06,088 INFO    MainThread:130648 [wandb_init.py:init():623] setting up manager
+2024-07-11 16:57:06,090 INFO    MainThread:130648 [backend.py:_multiprocessing_setup():107] multiprocessing start_methods=spawn, using: spawn
+2024-07-11 16:57:06,093 INFO    MainThread:130648 [wandb_init.py:init():631] backend started and connected
+2024-07-11 16:57:06,095 INFO    MainThread:130648 [wandb_init.py:init():720] updated telemetry
+2024-07-11 16:57:06,095 INFO    MainThread:130648 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-11 16:57:06,712 INFO    Thread-1  :130648 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connection.py", line 207, in _new_conn
+    socket_options=self.socket_options,
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\socket.py", line 752, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 803, in urlopen
+    **response_kw,
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 492, in _make_request
+    raise new_e
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 1097, in _validate_conn
+    conn.connect()
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001DAEB36A5C8>: Failed to resolve 'api.wandb.ai' ([Errno 11002] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\adapters.py", line 497, in send
+    chunked=chunked,
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 846, in urlopen
+    method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DAEB36A5C8>: Failed to resolve 'api.wandb.ai' ([Errno 11002] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\sdk\internal\internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DAEB36A5C8>: Failed to resolve 'api.wandb.ai' ([Errno 11002] getaddrinfo failed)"))

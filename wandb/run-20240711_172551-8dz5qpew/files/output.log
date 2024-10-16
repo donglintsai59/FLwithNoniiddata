@@ -1,0 +1,509 @@
+INFO flower 2024-07-11 17:25:55,729 | app.py:80 | Flower server running (insecure, 100 rounds)
+INFO flower 2024-07-11 17:25:55,730 | server.py:118 | Initializing global parameters
+INFO flower 2024-07-11 17:25:55,730 | server.py:300 | Using initial parameters provided by strategy
+INFO flower 2024-07-11 17:25:55,730 | server.py:120 | Evaluating initial parameters
+INFO flower 2024-07-11 17:25:56,396 | server.py:127 | initial parameters (loss, other metrics): 2.311352252960205, {'accuracy': 0.09189999848604202}
+INFO flower 2024-07-11 17:25:56,396 | server.py:133 | FL starting
+313/313 [==============================] - 1s 1ms/step - loss: 2.3114 - accuracy: 0.0919
+DEBUG flower 2024-07-11 17:26:13,095 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+  1/313 [..............................] - ETA: 4s - loss: 2.2779 - accuracy: 0.1250
+DEBUG flower 2024-07-11 17:26:13,670 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:14,133 | server.py:154 | fit progress: (1, 2.2850944995880127, {'accuracy': 0.12999999523162842}, 17.7371254)
+INFO flower 2024-07-11 17:26:14,133 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:14,133 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:14,293 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:14,753 | server.py:154 | fit progress: (2, 2.2529754638671875, {'accuracy': 0.16920000314712524}, 18.3580119)
+INFO flower 2024-07-11 17:26:14,753 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:14,755 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:14,916 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:15,380 | server.py:154 | fit progress: (3, 2.2111573219299316, {'accuracy': 0.227400004863739}, 18.9850647)
+INFO flower 2024-07-11 17:26:15,382 | server.py:199 | evaluate_round: no clients selected, cancel
+313/313 [==============================] - 0s 1ms/step - loss: 2.2851 - accuracy: 0.1300
+313/313 [==============================] - 0s 1ms/step - loss: 2.2530 - accuracy: 0.1692
+313/313 [==============================] - 0s 1ms/step - loss: 2.2112 - accuracy: 0.2274
+ 77/313 [======>.......................] - ETA: 0s - loss: 2.1746 - accuracy: 0.2707
+DEBUG flower 2024-07-11 17:26:15,622 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:16,083 | server.py:154 | fit progress: (4, 2.162693977355957, {'accuracy': 0.2847999930381775}, 19.6870947)
+INFO flower 2024-07-11 17:26:16,083 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:16,084 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:16,253 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:16,719 | server.py:154 | fit progress: (5, 2.074817180633545, {'accuracy': 0.35690000653266907}, 20.3233734)
+INFO flower 2024-07-11 17:26:16,720 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:16,720 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:16,897 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:17,361 | server.py:154 | fit progress: (6, 1.9471193552017212, {'accuracy': 0.40119999647140503}, 20.9647935)
+INFO flower 2024-07-11 17:26:17,361 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:17,361 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 2.1627 - accuracy: 0.2848
+313/313 [==============================] - 0s 1ms/step - loss: 2.0748 - accuracy: 0.3569
+313/313 [==============================] - 0s 1ms/step - loss: 1.9471 - accuracy: 0.4012
+188/313 [=================>............] - ETA: 0s - loss: 1.8060 - accuracy: 0.4029
+INFO flower 2024-07-11 17:26:18,004 | server.py:154 | fit progress: (7, 1.8010119199752808, {'accuracy': 0.4090999960899353}, 21.608302600000002)
+INFO flower 2024-07-11 17:26:18,004 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:18,004 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:18,174 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:18,653 | server.py:154 | fit progress: (8, 1.656283974647522, {'accuracy': 0.44350001215934753}, 22.2570377)
+INFO flower 2024-07-11 17:26:18,654 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:18,654 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:18,839 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:19,314 | server.py:154 | fit progress: (9, 1.4819658994674683, {'accuracy': 0.5579000115394592}, 22.9178565)
+INFO flower 2024-07-11 17:26:19,314 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:19,314 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 1.8010 - accuracy: 0.4091
+313/313 [==============================] - 0s 1ms/step - loss: 1.6563 - accuracy: 0.4435
+313/313 [==============================] - 0s 1ms/step - loss: 1.4820 - accuracy: 0.5579
+261/313 [========================>.....] - ETA: 0s - loss: 1.3279 - accuracy: 0.6370
+INFO flower 2024-07-11 17:26:19,971 | server.py:154 | fit progress: (10, 1.3150664567947388, {'accuracy': 0.64410001039505}, 23.575585999999998)
+INFO flower 2024-07-11 17:26:19,971 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:19,972 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:20,149 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:20,618 | server.py:154 | fit progress: (11, 1.1751900911331177, {'accuracy': 0.6897000074386597}, 24.222530199999998)
+INFO flower 2024-07-11 17:26:20,619 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:20,619 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:20,800 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:21,266 | server.py:154 | fit progress: (12, 1.0735979080200195, {'accuracy': 0.7067000269889832}, 24.869744100000002)
+INFO flower 2024-07-11 17:26:21,266 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:21,266 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 1.3151 - accuracy: 0.6441
+313/313 [==============================] - 0s 1ms/step - loss: 1.1752 - accuracy: 0.6897
+313/313 [==============================] - 0s 1ms/step - loss: 1.0736 - accuracy: 0.7067
+313/313 [==============================] - 0s 1ms/step - loss: 0.9885 - accuracy: 0.7234
+INFO flower 2024-07-11 17:26:21,910 | server.py:154 | fit progress: (13, 0.9885287880897522, {'accuracy': 0.7233999967575073}, 25.5137853)
+INFO flower 2024-07-11 17:26:21,910 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:21,911 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:22,086 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:22,610 | server.py:154 | fit progress: (14, 0.9423315525054932, {'accuracy': 0.7195000052452087}, 26.214593599999997)
+INFO flower 2024-07-11 17:26:22,610 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:22,611 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:22,787 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:23,313 | server.py:154 | fit progress: (15, 0.8607797026634216, {'accuracy': 0.7552000284194946}, 26.917884599999997)
+INFO flower 2024-07-11 17:26:23,313 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:23,313 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:23,527 | server.py:264 | fit_round received 3 results and 0 failures
+313/313 [==============================] - 0s 2ms/step - loss: 0.9423 - accuracy: 0.7195
+313/313 [==============================] - 0s 2ms/step - loss: 0.8608 - accuracy: 0.7552
+223/313 [====================>.........] - ETA: 0s - loss: 0.8217 - accuracy: 0.7492
+INFO flower 2024-07-11 17:26:24,001 | server.py:154 | fit progress: (16, 0.8073223829269409, {'accuracy': 0.7552000284194946}, 27.605053700000003)
+INFO flower 2024-07-11 17:26:24,002 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:24,002 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:24,178 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:24,654 | server.py:154 | fit progress: (17, 0.7642533183097839, {'accuracy': 0.7674999833106995}, 28.2586611)
+INFO flower 2024-07-11 17:26:24,654 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:24,654 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:24,831 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:25,288 | server.py:154 | fit progress: (18, 0.7007614970207214, {'accuracy': 0.7745000123977661}, 28.8923892)
+INFO flower 2024-07-11 17:26:25,289 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:25,289 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.8073 - accuracy: 0.7552
+313/313 [==============================] - 0s 1ms/step - loss: 0.7643 - accuracy: 0.7675
+313/313 [==============================] - 0s 1ms/step - loss: 0.7008 - accuracy: 0.7745
+313/313 [==============================] - 0s 1ms/step - loss: 0.6802 - accuracy: 0.7818
+INFO flower 2024-07-11 17:26:25,936 | server.py:154 | fit progress: (19, 0.6802378296852112, {'accuracy': 0.7817999720573425}, 29.540905)
+INFO flower 2024-07-11 17:26:25,936 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:25,938 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:26,118 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:26,588 | server.py:154 | fit progress: (20, 0.6459276080131531, {'accuracy': 0.7876999974250793}, 30.192546600000004)
+INFO flower 2024-07-11 17:26:26,589 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:26,589 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:26,768 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:27,288 | server.py:154 | fit progress: (21, 0.6456119418144226, {'accuracy': 0.7871000170707703}, 30.892164599999997)
+INFO flower 2024-07-11 17:26:27,289 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:27,289 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.6459 - accuracy: 0.7877
+313/313 [==============================] - 0s 2ms/step - loss: 0.6456 - accuracy: 0.7871
+ 72/313 [=====>........................] - ETA: 0s - loss: 0.6834 - accuracy: 0.7721
+DEBUG flower 2024-07-11 17:26:27,455 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:27,945 | server.py:154 | fit progress: (22, 0.630277693271637, {'accuracy': 0.7907999753952026}, 31.549103400000003)
+INFO flower 2024-07-11 17:26:27,945 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:27,945 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:28,131 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:28,647 | server.py:154 | fit progress: (23, 0.601935625076294, {'accuracy': 0.7961999773979187}, 32.251339400000006)
+INFO flower 2024-07-11 17:26:28,648 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:28,648 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:28,836 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:29,297 | server.py:154 | fit progress: (24, 0.5925542712211609, {'accuracy': 0.7972000241279602}, 32.9018925)
+INFO flower 2024-07-11 17:26:29,298 | server.py:199 | evaluate_round: no clients selected, cancel
+313/313 [==============================] - 0s 1ms/step - loss: 0.6303 - accuracy: 0.7908
+313/313 [==============================] - 0s 1ms/step - loss: 0.6019 - accuracy: 0.7962
+313/313 [==============================] - 0s 1ms/step - loss: 0.5926 - accuracy: 0.7972
+115/313 [==========>...................] - ETA: 0s - loss: 0.6099 - accuracy: 0.7918
+DEBUG flower 2024-07-11 17:26:29,471 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:29,938 | server.py:154 | fit progress: (25, 0.5676098465919495, {'accuracy': 0.8084999918937683}, 33.5427528)
+INFO flower 2024-07-11 17:26:29,939 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:29,939 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:30,120 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:30,585 | server.py:154 | fit progress: (26, 0.5662868022918701, {'accuracy': 0.8052999973297119}, 34.188626400000004)
+INFO flower 2024-07-11 17:26:30,585 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:30,585 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:30,742 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:31,210 | server.py:154 | fit progress: (27, 0.5520508289337158, {'accuracy': 0.8129000067710876}, 34.81448159999999)
+INFO flower 2024-07-11 17:26:31,211 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:31,211 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.5676 - accuracy: 0.8085
+313/313 [==============================] - 0s 1ms/step - loss: 0.5663 - accuracy: 0.8053
+313/313 [==============================] - 0s 1ms/step - loss: 0.5521 - accuracy: 0.8129
+223/313 [====================>.........] - ETA: 0s - loss: 0.5493 - accuracy: 0.8223
+INFO flower 2024-07-11 17:26:31,853 | server.py:154 | fit progress: (28, 0.5320314764976501, {'accuracy': 0.8289999961853027}, 35.4570042)
+INFO flower 2024-07-11 17:26:31,854 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:31,854 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:32,016 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:32,491 | server.py:154 | fit progress: (29, 0.5070824027061462, {'accuracy': 0.8388000130653381}, 36.095305800000006)
+INFO flower 2024-07-11 17:26:32,492 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:32,492 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:32,665 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:33,131 | server.py:154 | fit progress: (30, 0.5233191847801208, {'accuracy': 0.8256000280380249}, 36.735271299999994)
+INFO flower 2024-07-11 17:26:33,132 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:33,132 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.5320 - accuracy: 0.8290
+313/313 [==============================] - 0s 1ms/step - loss: 0.5071 - accuracy: 0.8388
+313/313 [==============================] - 0s 1ms/step - loss: 0.5233 - accuracy: 0.8256
+313/313 [==============================] - 0s 1ms/step - loss: 0.5025 - accuracy: 0.8373
+INFO flower 2024-07-11 17:26:33,783 | server.py:154 | fit progress: (31, 0.5024642944335938, {'accuracy': 0.8373000025749207}, 37.387269)
+INFO flower 2024-07-11 17:26:33,784 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:33,784 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:33,954 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:34,439 | server.py:154 | fit progress: (32, 0.4959377944469452, {'accuracy': 0.8360000252723694}, 38.043379)
+INFO flower 2024-07-11 17:26:34,439 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:34,440 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:34,617 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:35,083 | server.py:154 | fit progress: (33, 0.4737778306007385, {'accuracy': 0.8460000157356262}, 38.686891)
+INFO flower 2024-07-11 17:26:35,083 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:35,084 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:35,258 | server.py:264 | fit_round received 3 results and 0 failures
+313/313 [==============================] - 0s 1ms/step - loss: 0.4959 - accuracy: 0.8360
+313/313 [==============================] - 0s 1ms/step - loss: 0.4738 - accuracy: 0.8460
+313/313 [==============================] - 0s 1ms/step - loss: 0.4981 - accuracy: 0.8344
+INFO flower 2024-07-11 17:26:35,727 | server.py:154 | fit progress: (34, 0.49814507365226746, {'accuracy': 0.8343999981880188}, 39.3313378)
+INFO flower 2024-07-11 17:26:35,727 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:35,728 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:35,914 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:36,389 | server.py:154 | fit progress: (35, 0.48816928267478943, {'accuracy': 0.8374000191688538}, 39.9941742)
+INFO flower 2024-07-11 17:26:36,391 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:36,391 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:36,581 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:37,089 | server.py:154 | fit progress: (36, 0.47300785779953003, {'accuracy': 0.8478999733924866}, 40.6931989)
+INFO flower 2024-07-11 17:26:37,089 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:37,089 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:37,273 | server.py:264 | fit_round received 3 results and 0 failures
+313/313 [==============================] - 0s 1ms/step - loss: 0.4882 - accuracy: 0.8374
+313/313 [==============================] - 0s 1ms/step - loss: 0.4730 - accuracy: 0.8479
+313/313 [==============================] - 0s 1ms/step - loss: 0.4592 - accuracy: 0.8582
+INFO flower 2024-07-11 17:26:37,744 | server.py:154 | fit progress: (37, 0.45919638872146606, {'accuracy': 0.8582000136375427}, 41.3484342)
+INFO flower 2024-07-11 17:26:37,744 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:37,744 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:37,916 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:38,438 | server.py:154 | fit progress: (38, 0.44290459156036377, {'accuracy': 0.8672999739646912}, 42.043107500000005)
+INFO flower 2024-07-11 17:26:38,439 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:38,439 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:38,658 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:39,205 | server.py:154 | fit progress: (39, 0.4641367197036743, {'accuracy': 0.8540999889373779}, 42.80980460000001)
+INFO flower 2024-07-11 17:26:39,206 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:39,206 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:39,521 | server.py:264 | fit_round received 3 results and 0 failures
+313/313 [==============================] - 0s 2ms/step - loss: 0.4429 - accuracy: 0.8673
+313/313 [==============================] - 1s 2ms/step - loss: 0.4641 - accuracy: 0.8541
+221/313 [====================>.........] - ETA: 0s - loss: 0.5072 - accuracy: 0.8388
+INFO flower 2024-07-11 17:26:40,151 | server.py:154 | fit progress: (40, 0.4848371148109436, {'accuracy': 0.8475000262260437}, 43.754551199999995)
+INFO flower 2024-07-11 17:26:40,151 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:40,151 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:40,464 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:41,017 | server.py:154 | fit progress: (41, 0.4880612790584564, {'accuracy': 0.8479999899864197}, 44.621826)
+INFO flower 2024-07-11 17:26:41,019 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:41,019 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 1s 2ms/step - loss: 0.4848 - accuracy: 0.8475
+313/313 [==============================] - 1s 2ms/step - loss: 0.4881 - accuracy: 0.8480
+313/313 [==============================] - 1s 2ms/step - loss: 0.4592 - accuracy: 0.8608
+INFO flower 2024-07-11 17:26:41,878 | server.py:154 | fit progress: (42, 0.45921796560287476, {'accuracy': 0.86080002784729}, 45.4822674)
+INFO flower 2024-07-11 17:26:41,878 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:41,879 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:42,152 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:42,648 | server.py:154 | fit progress: (43, 0.4510590434074402, {'accuracy': 0.8639000058174133}, 46.252719400000004)
+INFO flower 2024-07-11 17:26:42,649 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:42,649 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:42,923 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:43,416 | server.py:154 | fit progress: (44, 0.45924896001815796, {'accuracy': 0.8597999811172485}, 47.0196715)
+INFO flower 2024-07-11 17:26:43,416 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:43,416 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:43,675 | server.py:264 | fit_round received 3 results and 0 failures
+313/313 [==============================] - 0s 1ms/step - loss: 0.4511 - accuracy: 0.8639
+313/313 [==============================] - 0s 1ms/step - loss: 0.4592 - accuracy: 0.8598
+260/313 [=======================>......] - ETA: 0s - loss: 0.4848 - accuracy: 0.8496
+INFO flower 2024-07-11 17:26:44,152 | server.py:154 | fit progress: (45, 0.46663373708724976, {'accuracy': 0.8568999767303467}, 47.7561944)
+INFO flower 2024-07-11 17:26:44,152 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:44,152 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:44,425 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:44,921 | server.py:154 | fit progress: (46, 0.4609089493751526, {'accuracy': 0.8583999872207642}, 48.5247727)
+INFO flower 2024-07-11 17:26:44,921 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:44,921 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:45,194 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:45,665 | server.py:154 | fit progress: (47, 0.4590200185775757, {'accuracy': 0.859499990940094}, 49.268893899999995)
+INFO flower 2024-07-11 17:26:45,665 | server.py:199 | evaluate_round: no clients selected, cancel
+313/313 [==============================] - 0s 1ms/step - loss: 0.4666 - accuracy: 0.8569
+313/313 [==============================] - 0s 1ms/step - loss: 0.4609 - accuracy: 0.8584
+313/313 [==============================] - 0s 1ms/step - loss: 0.4590 - accuracy: 0.8595
+110/313 [=========>....................] - ETA: 0s - loss: 0.5147 - accuracy: 0.8406
+DEBUG flower 2024-07-11 17:26:45,935 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:46,419 | server.py:154 | fit progress: (48, 0.45769137144088745, {'accuracy': 0.862500011920929}, 50.023562299999995)
+INFO flower 2024-07-11 17:26:46,420 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:46,420 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:46,675 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:47,139 | server.py:154 | fit progress: (49, 0.4609285593032837, {'accuracy': 0.8597999811172485}, 50.7438573)
+INFO flower 2024-07-11 17:26:47,140 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:47,140 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:47,390 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:47,857 | server.py:154 | fit progress: (50, 0.43759676814079285, {'accuracy': 0.8702999949455261}, 51.46140870000001)
+INFO flower 2024-07-11 17:26:47,858 | server.py:199 | evaluate_round: no clients selected, cancel
+313/313 [==============================] - 0s 1ms/step - loss: 0.4577 - accuracy: 0.8625
+313/313 [==============================] - 0s 1ms/step - loss: 0.4609 - accuracy: 0.8598
+313/313 [==============================] - 0s 1ms/step - loss: 0.4376 - accuracy: 0.8703
+ 36/313 [==>...........................] - ETA: 0s - loss: 0.5079 - accuracy: 0.8472
+DEBUG flower 2024-07-11 17:26:48,118 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:48,592 | server.py:154 | fit progress: (51, 0.43919506669044495, {'accuracy': 0.8694000244140625}, 52.196587699999995)
+INFO flower 2024-07-11 17:26:48,593 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:48,593 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:48,864 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:49,333 | server.py:154 | fit progress: (52, 0.43019893765449524, {'accuracy': 0.8756999969482422}, 52.937203100000005)
+INFO flower 2024-07-11 17:26:49,334 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:49,334 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.4392 - accuracy: 0.8694
+313/313 [==============================] - 0s 1ms/step - loss: 0.4302 - accuracy: 0.8757
+ 76/313 [======>.......................] - ETA: 0s - loss: 0.4993 - accuracy: 0.8503
+INFO flower 2024-07-11 17:26:50,065 | server.py:154 | fit progress: (53, 0.4361981451511383, {'accuracy': 0.8726999759674072}, 53.6693803)
+INFO flower 2024-07-11 17:26:50,065 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:50,066 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:50,330 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:50,809 | server.py:154 | fit progress: (54, 0.437725692987442, {'accuracy': 0.8733000159263611}, 54.4136123)
+INFO flower 2024-07-11 17:26:50,809 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:50,811 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:51,082 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:51,559 | server.py:154 | fit progress: (55, 0.46541786193847656, {'accuracy': 0.8634999990463257}, 55.163636)
+INFO flower 2024-07-11 17:26:51,560 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:51,560 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.4362 - accuracy: 0.8727
+313/313 [==============================] - 0s 1ms/step - loss: 0.4377 - accuracy: 0.8733
+313/313 [==============================] - 0s 1ms/step - loss: 0.4654 - accuracy: 0.8635
+INFO flower 2024-07-11 17:26:52,311 | server.py:154 | fit progress: (56, 0.44889336824417114, {'accuracy': 0.8668000102043152}, 55.91521040000001)
+INFO flower 2024-07-11 17:26:52,311 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:52,311 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:52,587 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:53,081 | server.py:154 | fit progress: (57, 0.4601520895957947, {'accuracy': 0.864799976348877}, 56.685941)
+INFO flower 2024-07-11 17:26:53,081 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:53,083 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:53,353 | server.py:264 | fit_round received 3 results and 0 failures
+313/313 [==============================] - 0s 1ms/step - loss: 0.4489 - accuracy: 0.8668
+313/313 [==============================] - 0s 1ms/step - loss: 0.4602 - accuracy: 0.8648
+313/313 [==============================] - 0s 1ms/step - loss: 0.4619 - accuracy: 0.8633
+DEBUG flower 2024-07-11 17:26:54,094 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:54,633 | server.py:154 | fit progress: (59, 0.46267637610435486, {'accuracy': 0.8669000267982483}, 58.2363668)
+INFO flower 2024-07-11 17:26:54,633 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:54,633 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:54,905 | server.py:264 | fit_round received 3 results and 0 failures
+313/313 [==============================] - 1s 2ms/step - loss: 0.4627 - accuracy: 0.8669
+313/313 [==============================] - 1s 2ms/step - loss: 0.4474 - accuracy: 0.8705
+114/313 [=========>....................] - ETA: 0s - loss: 0.5202 - accuracy: 0.8476
+INFO flower 2024-07-11 17:26:55,443 | server.py:154 | fit progress: (60, 0.4473668932914734, {'accuracy': 0.8705000281333923}, 59.04699690000001)
+INFO flower 2024-07-11 17:26:55,443 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:55,444 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:55,703 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:56,181 | server.py:154 | fit progress: (61, 0.45075932145118713, {'accuracy': 0.8695999979972839}, 59.7851613)
+INFO flower 2024-07-11 17:26:56,181 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:56,182 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:56,466 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:56,933 | server.py:154 | fit progress: (62, 0.45999911427497864, {'accuracy': 0.8666999936103821}, 60.537660200000005)
+INFO flower 2024-07-11 17:26:56,934 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:56,934 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.4508 - accuracy: 0.8696
+313/313 [==============================] - 0s 1ms/step - loss: 0.4600 - accuracy: 0.8667
+313/313 [==============================] - 0s 1ms/step - loss: 0.4656 - accuracy: 0.8668
+INFO flower 2024-07-11 17:26:57,668 | server.py:154 | fit progress: (63, 0.46555644273757935, {'accuracy': 0.8668000102043152}, 61.27243730000001)
+INFO flower 2024-07-11 17:26:57,669 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:57,669 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:57,929 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:58,402 | server.py:154 | fit progress: (64, 0.4649038016796112, {'accuracy': 0.8665000200271606}, 62.00661430000001)
+INFO flower 2024-07-11 17:26:58,403 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:58,403 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:58,677 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:26:59,157 | server.py:154 | fit progress: (65, 0.47111058235168457, {'accuracy': 0.8640999794006348}, 62.76085160000001)
+INFO flower 2024-07-11 17:26:59,157 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:59,157 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:26:59,447 | server.py:264 | fit_round received 3 results and 0 failures
+313/313 [==============================] - 0s 1ms/step - loss: 0.4649 - accuracy: 0.8665
+313/313 [==============================] - 0s 1ms/step - loss: 0.4711 - accuracy: 0.8641
+313/313 [==============================] - 0s 1ms/step - loss: 0.4704 - accuracy: 0.8642
+INFO flower 2024-07-11 17:26:59,947 | server.py:154 | fit progress: (66, 0.4703714847564697, {'accuracy': 0.8641999959945679}, 63.55074930000001)
+INFO flower 2024-07-11 17:26:59,947 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:26:59,947 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:00,250 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:00,747 | server.py:154 | fit progress: (67, 0.47406134009361267, {'accuracy': 0.8639000058174133}, 64.3517556)
+INFO flower 2024-07-11 17:27:00,748 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:00,748 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:01,026 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:01,499 | server.py:154 | fit progress: (68, 0.48481959104537964, {'accuracy': 0.8604999780654907}, 65.1043544)
+INFO flower 2024-07-11 17:27:01,501 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:01,501 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.4741 - accuracy: 0.8639
+313/313 [==============================] - 0s 1ms/step - loss: 0.4848 - accuracy: 0.8605
+191/313 [=================>............] - ETA: 0s - loss: 0.5150 - accuracy: 0.8527
+DEBUG flower 2024-07-11 17:27:01,755 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:02,222 | server.py:154 | fit progress: (69, 0.4751369059085846, {'accuracy': 0.8650000095367432}, 65.82600430000001)
+INFO flower 2024-07-11 17:27:02,222 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:02,223 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:02,497 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:02,952 | server.py:154 | fit progress: (70, 0.4723018407821655, {'accuracy': 0.866100013256073}, 66.555994)
+INFO flower 2024-07-11 17:27:02,952 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:02,953 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:03,203 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:03,695 | server.py:154 | fit progress: (71, 0.4615591764450073, {'accuracy': 0.8716999888420105}, 67.2989652)
+INFO flower 2024-07-11 17:27:03,695 | server.py:199 | evaluate_round: no clients selected, cancel
+313/313 [==============================] - 0s 1ms/step - loss: 0.4751 - accuracy: 0.8650
+313/313 [==============================] - 0s 1ms/step - loss: 0.4723 - accuracy: 0.8661
+313/313 [==============================] - 0s 1ms/step - loss: 0.4616 - accuracy: 0.8717
+ 69/313 [=====>........................] - ETA: 0s - loss: 0.5302 - accuracy: 0.8555
+DEBUG flower 2024-07-11 17:27:03,988 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:04,504 | server.py:154 | fit progress: (72, 0.46145132184028625, {'accuracy': 0.8726999759674072}, 68.1080398)
+INFO flower 2024-07-11 17:27:04,504 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:04,504 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:04,778 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:05,289 | server.py:154 | fit progress: (73, 0.46376821398735046, {'accuracy': 0.8719000220298767}, 68.8933064)
+INFO flower 2024-07-11 17:27:05,289 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:05,290 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.4615 - accuracy: 0.8727
+313/313 [==============================] - 0s 1ms/step - loss: 0.4638 - accuracy: 0.8719
+313/313 [==============================] - 0s 1ms/step - loss: 0.4689 - accuracy: 0.8698
+INFO flower 2024-07-11 17:27:06,051 | server.py:154 | fit progress: (74, 0.4689485430717468, {'accuracy': 0.8697999715805054}, 69.65477150000001)
+INFO flower 2024-07-11 17:27:06,051 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:06,052 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:06,335 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:06,816 | server.py:154 | fit progress: (75, 0.4854643642902374, {'accuracy': 0.8658000230789185}, 70.4202527)
+INFO flower 2024-07-11 17:27:06,817 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:06,817 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:07,085 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:07,571 | server.py:154 | fit progress: (76, 0.48679378628730774, {'accuracy': 0.8652999997138977}, 71.1753261)
+INFO flower 2024-07-11 17:27:07,571 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:07,571 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:07,866 | server.py:264 | fit_round received 3 results and 0 failures
+313/313 [==============================] - 0s 1ms/step - loss: 0.4855 - accuracy: 0.8658
+313/313 [==============================] - 0s 1ms/step - loss: 0.4868 - accuracy: 0.8653
+178/313 [================>.............] - ETA: 0s - loss: 0.5327 - accuracy: 0.8499
+INFO flower 2024-07-11 17:27:08,437 | server.py:154 | fit progress: (77, 0.486529141664505, {'accuracy': 0.8636999726295471}, 72.0405898)
+INFO flower 2024-07-11 17:27:08,437 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:08,437 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:08,727 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:09,217 | server.py:154 | fit progress: (78, 0.4842871129512787, {'accuracy': 0.8672000169754028}, 72.8205386)
+INFO flower 2024-07-11 17:27:09,217 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:09,217 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.4865 - accuracy: 0.8637
+313/313 [==============================] - 0s 1ms/step - loss: 0.4843 - accuracy: 0.8672
+313/313 [==============================] - 0s 1ms/step - loss: 0.4796 - accuracy: 0.8686
+  1/313 [..............................] - ETA: 4s - loss: 0.3019 - accuracy: 0.9062
+INFO flower 2024-07-11 17:27:09,977 | server.py:154 | fit progress: (79, 0.47956469655036926, {'accuracy': 0.8686000108718872}, 73.5813851)
+INFO flower 2024-07-11 17:27:09,978 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:09,978 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:10,266 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:10,785 | server.py:154 | fit progress: (80, 0.4694303572177887, {'accuracy': 0.8726000189781189}, 74.3890837)
+INFO flower 2024-07-11 17:27:10,785 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:10,785 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:11,051 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:11,580 | server.py:154 | fit progress: (81, 0.4864598512649536, {'accuracy': 0.867900013923645}, 75.1843456)
+INFO flower 2024-07-11 17:27:11,580 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:11,581 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 2ms/step - loss: 0.4694 - accuracy: 0.8726
+313/313 [==============================] - 0s 2ms/step - loss: 0.4865 - accuracy: 0.8679
+INFO flower 2024-07-11 17:27:12,361 | server.py:154 | fit progress: (82, 0.4975655674934387, {'accuracy': 0.8647000193595886}, 75.965191)
+INFO flower 2024-07-11 17:27:12,361 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:12,362 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:12,683 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:13,176 | server.py:154 | fit progress: (83, 0.47969290614128113, {'accuracy': 0.870199978351593}, 76.7802843)
+INFO flower 2024-07-11 17:27:13,176 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:13,176 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:13,446 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:13,969 | server.py:154 | fit progress: (84, 0.48474329710006714, {'accuracy': 0.8693000078201294}, 77.5733259)
+INFO flower 2024-07-11 17:27:13,969 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:13,970 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.4976 - accuracy: 0.8647
+313/313 [==============================] - 0s 1ms/step - loss: 0.4797 - accuracy: 0.8702
+270/313 [========================>.....] - ETA: 0s - loss: 0.5030 - accuracy: 0.8623
+DEBUG flower 2024-07-11 17:27:14,234 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:14,724 | server.py:154 | fit progress: (85, 0.4918214976787567, {'accuracy': 0.8682000041007996}, 78.3281893)
+INFO flower 2024-07-11 17:27:14,724 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:14,725 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:14,976 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:15,456 | server.py:154 | fit progress: (86, 0.4826151728630066, {'accuracy': 0.8716999888420105}, 79.0595725)
+INFO flower 2024-07-11 17:27:15,456 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:15,456 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 2ms/step - loss: 0.4847 - accuracy: 0.8693
+313/313 [==============================] - 0s 1ms/step - loss: 0.4918 - accuracy: 0.8682
+313/313 [==============================] - 0s 1ms/step - loss: 0.4826 - accuracy: 0.8717
+154/313 [=============>................] - ETA: 0s - loss: 0.5404 - accuracy: 0.8559
+INFO flower 2024-07-11 17:27:16,198 | server.py:154 | fit progress: (87, 0.4789651334285736, {'accuracy': 0.8726999759674072}, 79.80161100000001)
+INFO flower 2024-07-11 17:27:16,198 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:16,198 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:16,454 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:16,915 | server.py:154 | fit progress: (88, 0.49435946345329285, {'accuracy': 0.8679999709129333}, 80.51959000000001)
+INFO flower 2024-07-11 17:27:16,915 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:16,915 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:17,175 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:17,648 | server.py:154 | fit progress: (89, 0.4948576092720032, {'accuracy': 0.868399977684021}, 81.2520973)
+INFO flower 2024-07-11 17:27:17,648 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:17,648 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.4790 - accuracy: 0.8727
+313/313 [==============================] - 0s 1ms/step - loss: 0.4944 - accuracy: 0.8680
+313/313 [==============================] - 0s 1ms/step - loss: 0.4949 - accuracy: 0.8684
+ 74/313 [======>.......................] - ETA: 0s - loss: 0.5740 - accuracy: 0.8518
+INFO flower 2024-07-11 17:27:18,378 | server.py:154 | fit progress: (90, 0.48962152004241943, {'accuracy': 0.8708000183105469}, 81.982084)
+INFO flower 2024-07-11 17:27:18,378 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:18,378 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:18,654 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:19,125 | server.py:154 | fit progress: (91, 0.4901787042617798, {'accuracy': 0.8727999925613403}, 82.72984430000001)
+INFO flower 2024-07-11 17:27:19,126 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:19,126 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:19,401 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:19,898 | server.py:154 | fit progress: (92, 0.5045689940452576, {'accuracy': 0.8671000003814697}, 83.5019382)
+INFO flower 2024-07-11 17:27:19,898 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:19,898 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.4896 - accuracy: 0.8708
+313/313 [==============================] - 0s 1ms/step - loss: 0.4902 - accuracy: 0.8728
+313/313 [==============================] - 0s 1ms/step - loss: 0.5046 - accuracy: 0.8671
+INFO flower 2024-07-11 17:27:20,646 | server.py:154 | fit progress: (93, 0.49028316140174866, {'accuracy': 0.8727999925613403}, 84.25136810000001)
+INFO flower 2024-07-11 17:27:20,648 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:20,648 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:20,906 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:21,385 | server.py:154 | fit progress: (94, 0.49935176968574524, {'accuracy': 0.8704000115394592}, 84.9894802)
+INFO flower 2024-07-11 17:27:21,386 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:21,386 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:21,652 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:22,126 | server.py:154 | fit progress: (95, 0.4987996220588684, {'accuracy': 0.8711000084877014}, 85.73087430000001)
+INFO flower 2024-07-11 17:27:22,126 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:22,126 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.4903 - accuracy: 0.8728
+313/313 [==============================] - 0s 1ms/step - loss: 0.4994 - accuracy: 0.8704
+313/313 [==============================] - 0s 1ms/step - loss: 0.4988 - accuracy: 0.8711
+DEBUG flower 2024-07-11 17:27:22,392 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:22,869 | server.py:154 | fit progress: (96, 0.5052351355552673, {'accuracy': 0.867900013923645}, 86.4731084)
+INFO flower 2024-07-11 17:27:22,869 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:22,869 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:23,154 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:23,638 | server.py:154 | fit progress: (97, 0.5113718509674072, {'accuracy': 0.8662999868392944}, 87.2412485)
+INFO flower 2024-07-11 17:27:23,638 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:23,638 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.5052 - accuracy: 0.8679
+313/313 [==============================] - 0s 1ms/step - loss: 0.5114 - accuracy: 0.8663
+182/313 [================>.............] - ETA: 0s - loss: 0.5591 - accuracy: 0.8547
+DEBUG flower 2024-07-11 17:27:23,904 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:24,393 | server.py:154 | fit progress: (98, 0.5058690905570984, {'accuracy': 0.868399977684021}, 87.9963151)
+INFO flower 2024-07-11 17:27:24,393 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:24,393 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 17:27:24,662 | server.py:264 | fit_round received 3 results and 0 failures
+INFO flower 2024-07-11 17:27:25,147 | server.py:154 | fit progress: (99, 0.5022303462028503, {'accuracy': 0.8712999820709229}, 88.7509572)
+INFO flower 2024-07-11 17:27:25,148 | server.py:199 | evaluate_round: no clients selected, cancel
+DEBUG flower 2024-07-11 17:27:25,148 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+313/313 [==============================] - 0s 1ms/step - loss: 0.5059 - accuracy: 0.8684
+313/313 [==============================] - 0s 1ms/step - loss: 0.5022 - accuracy: 0.8713
+313/313 [==============================] - 0s 1ms/step - loss: 0.5073 - accuracy: 0.8701
+INFO flower 2024-07-11 17:27:25,902 | server.py:154 | fit progress: (100, 0.507309079170227, {'accuracy': 0.8701000213623047}, 89.5061926)
+INFO flower 2024-07-11 17:27:25,902 | server.py:199 | evaluate_round: no clients selected, cancel
+INFO flower 2024-07-11 17:27:25,902 | server.py:172 | FL finished in 89.5068704
+INFO flower 2024-07-11 17:27:25,903 | app.py:119 | app_fit: losses_distributed []
+INFO flower 2024-07-11 17:27:25,903 | app.py:120 | app_fit: metrics_distributed {}
+INFO flower 2024-07-11 17:27:25,903 | app.py:121 | app_fit: losses_centralized [(0, 2.311352252960205), (1, 2.2850944995880127), (2, 2.2529754638671875), (3, 2.2111573219299316), (4, 2.162693977355957), (5, 2.074817180633545), (6, 1.9471193552017212), (7, 1.8010119199752808), (8, 1.656283974647522), (9, 1.4819658994674683), (10, 1.3150664567947388), (11, 1.1751900911331177), (12, 1.0735979080200195), (13, 0.9885287880897522), (14, 0.9423315525054932), (15, 0.8607797026634216), (16, 0.8073223829269409), (17, 0.7642533183097839), (18, 0.7007614970207214), (19, 0.6802378296852112), (20, 0.6459276080131531), (21, 0.6456119418144226), (22, 0.630277693271637), (23, 0.601935625076294), (24, 0.5925542712211609), (25, 0.5676098465919495), (26, 0.5662868022918701), (27, 0.5520508289337158), (28, 0.5320314764976501), (29, 0.5070824027061462), (30, 0.5233191847801208), (31, 0.5024642944335938), (32, 0.4959377944469452), (33, 0.4737778306007385), (34, 0.49814507365226746), (35, 0.48816928267478943), (36, 0.47300785779953003), (37, 0.45919638872146606), (38, 0.44290459156036377), (39, 0.4641367197036743), (40, 0.4848371148109436), (41, 0.4880612790584564), (42, 0.45921796560287476), (43, 0.4510590434074402), (44, 0.45924896001815796), (45, 0.46663373708724976), (46, 0.4609089493751526), (47, 0.4590200185775757), (48, 0.45769137144088745), (49, 0.4609285593032837), (50, 0.43759676814079285), (51, 0.43919506669044495), (52, 0.43019893765449524), (53, 0.4361981451511383), (54, 0.437725692987442), (55, 0.46541786193847656), (56, 0.44889336824417114), (57, 0.4601520895957947), (58, 0.4619256854057312), (59, 0.46267637610435486), (60, 0.4473668932914734), (61, 0.45075932145118713), (62, 0.45999911427497864), (63, 0.46555644273757935), (64, 0.4649038016796112), (65, 0.47111058235168457), (66, 0.4703714847564697), (67, 0.47406134009361267), (68, 0.48481959104537964), (69, 0.4751369059085846), (70, 0.4723018407821655), (71, 0.4615591764450073), (72, 0.46145132184028625), (73, 0.46376821398735046), (74, 0.4689485430717468), (75, 0.4854643642902374), (76, 0.48679378628730774), (77, 0.486529141664505), (78, 0.4842871129512787), (79, 0.47956469655036926), (80, 0.4694303572177887), (81, 0.4864598512649536), (82, 0.4975655674934387), (83, 0.47969290614128113), (84, 0.48474329710006714), (85, 0.4918214976787567), (86, 0.4826151728630066), (87, 0.4789651334285736), (88, 0.49435946345329285), (89, 0.4948576092720032), (90, 0.48962152004241943), (91, 0.4901787042617798), (92, 0.5045689940452576), (93, 0.49028316140174866), (94, 0.49935176968574524), (95, 0.4987996220588684), (96, 0.5052351355552673), (97, 0.5113718509674072), (98, 0.5058690905570984), (99, 0.5022303462028503), (100, 0.507309079170227)]
+INFO flower 2024-07-11 17:27:25,903 | app.py:122 | app_fit: metrics_centralized {'accuracy': [(0, 0.09189999848604202), (1, 0.12999999523162842), (2, 0.16920000314712524), (3, 0.227400004863739), (4, 0.2847999930381775), (5, 0.35690000653266907), (6, 0.40119999647140503), (7, 0.4090999960899353), (8, 0.44350001215934753), (9, 0.5579000115394592), (10, 0.64410001039505), (11, 0.6897000074386597), (12, 0.7067000269889832), (13, 0.7233999967575073), (14, 0.7195000052452087), (15, 0.7552000284194946), (16, 0.7552000284194946), (17, 0.7674999833106995), (18, 0.7745000123977661), (19, 0.7817999720573425), (20, 0.7876999974250793), (21, 0.7871000170707703), (22, 0.7907999753952026), (23, 0.7961999773979187), (24, 0.7972000241279602), (25, 0.8084999918937683), (26, 0.8052999973297119), (27, 0.8129000067710876), (28, 0.8289999961853027), (29, 0.8388000130653381), (30, 0.8256000280380249), (31, 0.8373000025749207), (32, 0.8360000252723694), (33, 0.8460000157356262), (34, 0.8343999981880188), (35, 0.8374000191688538), (36, 0.8478999733924866), (37, 0.8582000136375427), (38, 0.8672999739646912), (39, 0.8540999889373779), (40, 0.8475000262260437), (41, 0.8479999899864197), (42, 0.86080002784729), (43, 0.8639000058174133), (44, 0.8597999811172485), (45, 0.8568999767303467), (46, 0.8583999872207642), (47, 0.859499990940094), (48, 0.862500011920929), (49, 0.8597999811172485), (50, 0.8702999949455261), (51, 0.8694000244140625), (52, 0.8756999969482422), (53, 0.8726999759674072), (54, 0.8733000159263611), (55, 0.8634999990463257), (56, 0.8668000102043152), (57, 0.864799976348877), (58, 0.8633000254631042), (59, 0.8669000267982483), (60, 0.8705000281333923), (61, 0.8695999979972839), (62, 0.8666999936103821), (63, 0.8668000102043152), (64, 0.8665000200271606), (65, 0.8640999794006348), (66, 0.8641999959945679), (67, 0.8639000058174133), (68, 0.8604999780654907), (69, 0.8650000095367432), (70, 0.866100013256073), (71, 0.8716999888420105), (72, 0.8726999759674072), (73, 0.8719000220298767), (74, 0.8697999715805054), (75, 0.8658000230789185), (76, 0.8652999997138977), (77, 0.8636999726295471), (78, 0.8672000169754028), (79, 0.8686000108718872), (80, 0.8726000189781189), (81, 0.867900013923645), (82, 0.8647000193595886), (83, 0.870199978351593), (84, 0.8693000078201294), (85, 0.8682000041007996), (86, 0.8716999888420105), (87, 0.8726999759674072), (88, 0.8679999709129333), (89, 0.868399977684021), (90, 0.8708000183105469), (91, 0.8727999925613403), (92, 0.8671000003814697), (93, 0.8727999925613403), (94, 0.8704000115394592), (95, 0.8711000084877014), (96, 0.867900013923645), (97, 0.8662999868392944), (98, 0.868399977684021), (99, 0.8712999820709229), (100, 0.8701000213623047)]}

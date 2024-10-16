@@ -1,0 +1,90 @@
+2024-07-11 16:58:25,415 INFO    StreamThr :117556 [internal.py:wandb_internal():88] W&B internal server running at pid: 117556, started at: 2024-07-11 16:58:25.414549
+2024-07-11 16:58:25,416 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: status
+2024-07-11 16:58:25,418 INFO    WriterThread:117556 [datastore.py:open_for_write():87] open: C:\Users\a0975\fl\wandb\run-20240711_165825-octz84zr\run-octz84zr.wandb
+2024-07-11 16:58:25,419 DEBUG   SenderThread:117556 [sender.py:send():379] send: header
+2024-07-11 16:58:25,419 DEBUG   SenderThread:117556 [sender.py:send():379] send: run
+2024-07-11 16:58:30,465 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:58:30,701 INFO    SenderThread:117556 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connection.py", line 207, in _new_conn
+    socket_options=self.socket_options,
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\socket.py", line 752, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 803, in urlopen
+    **response_kw,
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 492, in _make_request
+    raise new_e
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 468, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 1097, in _validate_conn
+    conn.connect()
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000022D7FA7BE08>: Failed to resolve 'api.wandb.ai' ([Errno 11002] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\adapters.py", line 497, in send
+    chunked=chunked,
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\connectionpool.py", line 846, in urlopen
+    method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022D7FA7BE08>: Failed to resolve 'api.wandb.ai' ([Errno 11002] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\sdk\internal\internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022D7FA7BE08>: Failed to resolve 'api.wandb.ai' ([Errno 11002] getaddrinfo failed)"))
+2024-07-11 16:58:35,503 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:58:40,559 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:58:45,618 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:58:50,653 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:58:55,698 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:59:00,740 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:59:05,781 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:59:10,835 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:59:15,872 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:59:20,915 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:59:25,955 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:59:31,011 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:59:36,046 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:59:41,094 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:59:46,147 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:59:51,199 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-11 16:59:56,241 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: cancel
+2024-07-11 16:59:56,242 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: cancel
+2024-07-11 16:59:56,242 DEBUG   SenderThread:117556 [sender.py:send():388] Record cancelled: run
+2024-07-11 16:59:56,242 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 16:59:58,183 DEBUG   HandlerThread:117556 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-11 16:59:58,183 INFO    HandlerThread:117556 [handler.py:finish():882] shutting down handler
+2024-07-11 16:59:58,261 INFO    SenderThread:117556 [sender.py:finish():1608] shutting down sender
+2024-07-11 16:59:58,261 INFO    WriterThread:117556 [datastore.py:close():296] close: C:\Users\a0975\fl\wandb\run-20240711_165825-octz84zr\run-octz84zr.wandb

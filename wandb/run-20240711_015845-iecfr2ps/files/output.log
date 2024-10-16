@@ -1,0 +1,49 @@
+INFO flower 2024-07-11 01:58:50,072 | app.py:80 | Flower server running (insecure, 50 rounds)
+INFO flower 2024-07-11 01:58:50,072 | server.py:118 | Initializing global parameters
+INFO flower 2024-07-11 01:58:50,073 | server.py:300 | Using initial parameters provided by strategy
+INFO flower 2024-07-11 01:58:50,073 | server.py:120 | Evaluating initial parameters
+INFO flower 2024-07-11 01:58:50,581 | server.py:127 | initial parameters (loss, other metrics): 2.31426739692688, {'accuracy': 0.07020000368356705}
+INFO flower 2024-07-11 01:58:50,581 | server.py:133 | FL starting
+157/157 [==============================] - 0s 2ms/step - loss: 2.3143 - accuracy: 0.0702
+Traceback (most recent call last):
+  File "serverwan.py", line 157, in <module>
+    main()
+  File "serverwan.py", line 91, in main
+    fl.server.start_server("localhost:8080", config={"num_rounds": 50}, strategy=strategy) #windows
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\flwr\server\app.py", line 86, in start_server
+    force_final_distributed_eval=force_final_distributed_eval,
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\flwr\server\app.py", line 118, in _fl
+    hist = server.fit(num_rounds=config["num_rounds"])
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\flwr\server\server.py", line 138, in fit
+    res_fit = self.fit_round(rnd=current_round)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\flwr\server\server.py", line 246, in fit_round
+    rnd=rnd, parameters=self.parameters, client_manager=self._client_manager
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\flwr\server\strategy\fedavg.py", line 204, in configure_fit
+    num_clients=sample_size, min_num_clients=min_num_clients
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\flwr\server\client_manager.py", line 130, in sample
+    self.wait_for(min_num_clients)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\flwr\server\client_manager.py", line 82, in wait_for
+    lambda: len(self.clients) >= num_clients, timeout=timeout
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\threading.py", line 331, in wait_for
+    self.wait(waittime)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\grpc\_server.py", line 1222, in _serve
+    if not _process_event_and_continue(state, event):
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\grpc\_server.py", line 1187, in _process_event_and_continue
+    concurrency_exceeded,
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\grpc\_server.py", line 1059, in _handle_call
+    rpc_event, rpc_state, method_handler, thread_pool
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\grpc\_server.py", line 997, in _handle_with_method_handler
+    rpc_event, state, method_handler, thread_pool
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\site-packages\grpc\_server.py", line 928, in _handle_stream_stream
+    method_handler.response_serializer,
+  File "C:\Users\a0975\anaconda3\envs\fltest\lib\concurrent\futures\thread.py", line 165, in submit
+    raise RuntimeError('cannot schedule new futures after '

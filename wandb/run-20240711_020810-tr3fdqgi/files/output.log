@@ -1,0 +1,12 @@
+INFO flower 2024-07-11 02:08:14,913 | app.py:80 | Flower server running (insecure, 50 rounds)
+INFO flower 2024-07-11 02:08:14,913 | server.py:118 | Initializing global parameters
+INFO flower 2024-07-11 02:08:14,913 | server.py:300 | Using initial parameters provided by strategy
+INFO flower 2024-07-11 02:08:14,914 | server.py:120 | Evaluating initial parameters
+INFO flower 2024-07-11 02:08:15,397 | server.py:127 | initial parameters (loss, other metrics): 2.3233935832977295, {'accuracy': 0.08299999684095383}
+INFO flower 2024-07-11 02:08:15,397 | server.py:133 | FL starting
+157/157 [==============================] - 0s 1ms/step - loss: 2.3234 - accuracy: 0.0830
+  1/157 [..............................] - ETA: 4s - loss: 2.2951 - accuracy: 0.1250
+DEBUG flower 2024-07-11 02:08:26,795 | server.py:255 | fit_round: strategy sampled 3 clients (out of 3)
+DEBUG flower 2024-07-11 02:08:26,813 | server.py:264 | fit_round received 0 results and 3 failures
+INFO flower 2024-07-11 02:08:27,236 | server.py:154 | fit progress: (1, 2.3233935832977295, {'accuracy': 0.08299999684095383}, 11.839072599999998)
+
