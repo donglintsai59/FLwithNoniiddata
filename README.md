@@ -10,4 +10,4 @@ MNIST
 We use Dirichlet distribution to convert the data into a non-IID. The Dirichlet distribution is a continuous multivariate probability distribution, which is an extension of the Beta distribution to higher dimensions. It is primarily used for modeling proportions of random variables whose sum is constrained to be one.
 ## Reslut
 The program includes the Weights and Biases (wandb) API to easily monitor and visualize the experiment data.
-![image](https://github.com/donglintsai59/PhotoEditingdetect/blob/main/example.jpg)
+![image](https://github.com/donglintsai59/FLwithNoniiddata/blob/main/reslut.jpg)
