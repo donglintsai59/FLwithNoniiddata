@@ -18,7 +18,7 @@ wandb.init(
 )
 
 '''
-Step 1. Build Global Model (建立全域模型)
+ Build Global Model 
 '''
 # Hyperparameter超參數
 num_classes = 10
@@ -41,7 +41,7 @@ def CNN_Model(input_shape, number_classes):
     return model
 
 '''
-Step 2. Override fl.server.strategy.FedAvg (覆寫FedAvg class)
+Override fl.server.strategy.FedAvg 
 '''
 class AggregateCustomMetricStrategy(fl.server.strategy.FedAvg):
     def aggregate_evaluate(
@@ -69,7 +69,7 @@ class AggregateCustomMetricStrategy(fl.server.strategy.FedAvg):
         return super().aggregate_evaluate(rnd, results, failures)
 
 '''
-Step 3. Start server and run the strategy (套用所設定的策略，啟動Server)
+ Start server and run the strategy 
 '''
 
 def main() -> None:
