@@ -1,19 +1,14 @@
-'''
-引入套件
-'''
 import flwr as fl
 import tensorflow as tf
 from tensorflow.keras import Input, Model, layers, regularizers
-import numpy as np # 資料前處理
+import numpy as np 
 
-import argparse # CmmandLine 輸入控制參數
-import os # 更改tensorflow的Log訊息的顯示模式
-
-# Make TensorFlow logs less verbose (減少不必要的訊息顯示)
+import argparse 
+import os 
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 '''
-Step 1. Build Local Model (建立本地模型)
+ Build Local Model 
 '''
 # Hyperparameter超參數
 num_classes = 10
@@ -35,7 +30,7 @@ def CNN_Model(input_shape, number_classes):
     model = Model(inputs=input_tensor, outputs=outputs, name="simple_mnist_model")
     return model
 '''
-Step 2. Load local dataset (引入本地端資料集)，對Dataset進行切割
+Load local dataset
 '''
 
 def load_partition(idx: int, num_clients: int = 10, alpha: float = 0.5, samples_per_client: list = [300,300,300]):
@@ -88,7 +83,7 @@ def load_partition(idx: int, num_clients: int = 10, alpha: float = 0.5, samples_
         y_test[:num_samples // num_clients],
     )
 '''waaaaa
-Step 3. Define Flower client (定義client的相關設定: 接收Server-side的global model weight、hyperparameters)
+Define Flower client 
 '''
 class MnistClient(fl.client.NumPyClient):
     # Class初始化: local model、dataset
@@ -97,8 +92,6 @@ class MnistClient(fl.client.NumPyClient):
         self.x_train, self.y_train = x_train, y_train
         self.x_test, self.y_test = x_test, y_test
 
-    # 此時已無作用，原用來取得 local model 的 ini-weight，
-    # 目前初始權重值是來自 Server-side 而非 client 自己
     def get_parameters(self):
         """Get parameters of the local model."""
         raise Exception("Not implemented (server-side parameter initialization)")
@@ -112,9 +105,6 @@ class MnistClient(fl.client.NumPyClient):
         # Get hyperparameters for this round
         batch_size: int = config["batch_size"]
         epochs: int = config["local_epochs"]
-
-        # Train the model using hyperparameters from config
-        # (依 Server-side 的 hyperparameters 進行訓練)
         history = self.model.fit(
             self.x_train,
             self.y_train,
@@ -123,8 +113,6 @@ class MnistClient(fl.client.NumPyClient):
             validation_split=0.2,
         )
 
-        # Return updated model parameters and results
-        # 將訓練後的權重、資料集筆數、正確率/loss值等，回傳至server-side
         parameters_prime = self.model.get_weights()
         num_examples_train = len(self.x_train)
         results = {
@@ -150,11 +138,10 @@ class MnistClient(fl.client.NumPyClient):
         return loss, num_examples_test, {"accuracy": accuracy}
 
 '''
-Step 4. Create an instance of our flower client and add one line to actually run this client. (建立Client-to-Server的連線)
+ Create an instance of our flower client and add one line to actually run this client.
 '''
 def main() -> None:
-    # Parse command line argument `partition`
-    # 從 CommandLine 輸入 Client 編號，對 Dataset進行切割
+
     parser = argparse.ArgumentParser(description="Flower")
     parser.add_argument("--partition", type=int, choices=range(0, 10), required=True)
     args = parser.parse_args()
