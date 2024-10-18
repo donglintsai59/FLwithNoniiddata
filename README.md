@@ -1,7 +1,7 @@
 # FL with non-iid data 
 
 ## Introduction
-This program aims to simulate real-world FL System, so we use non-IID data as referenced in the paper to achieve this.
+This program aims to simulate real-world FL System, so we use non-IID data as referenced in the ['Federated Learning on Non-IID Data Silos: An Experimental Study'](https://ieeexplore.ieee.org/document/9835537) to achieve this.
 We need to run two different programs to meet the server and device requirements. You'll need to run client.py on the Jetson Nano and serverwandb.py on your computer.
 
 ## Dataset
